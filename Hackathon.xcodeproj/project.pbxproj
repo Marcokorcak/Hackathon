@@ -15,6 +15,9 @@
 		9C7183E325BD264E006912EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C7183E125BD264E006912EF /* LaunchScreen.storyboard */; };
 		9C7183EE25BD264E006912EF /* HackathonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7183ED25BD264E006912EF /* HackathonTests.swift */; };
 		9C7183F925BD264E006912EF /* HackathonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7183F825BD264E006912EF /* HackathonUITests.swift */; };
+		9C71843025BD5E33006912EF /* Aww.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C71842E25BD5E33006912EF /* Aww.mp3 */; };
+		9C71843125BD5E33006912EF /* Yay.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C71842F25BD5E33006912EF /* Yay.mp3 */; };
+		9C71843925BD7107006912EF /* Spring.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9C71843825BD7107006912EF /* Spring.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +34,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 9C7183D225BD264C006912EF;
 			remoteInfo = Hackathon;
+		};
+		9C71842125BD2A37006912EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C71841D25BD2A37006912EF /* hackathon code.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C71841225BD2756006912EF;
+			remoteInfo = "hackathon code";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -49,6 +59,10 @@
 		9C7183F425BD264E006912EF /* HackathonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackathonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C7183F825BD264E006912EF /* HackathonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackathonUITests.swift; sourceTree = "<group>"; };
 		9C7183FA25BD264E006912EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C71841D25BD2A37006912EF /* hackathon code.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "hackathon code.xcodeproj"; path = "../../cpp code hackathon/hackathon code/hackathon code.xcodeproj"; sourceTree = "<group>"; };
+		9C71842E25BD5E33006912EF /* Aww.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Aww.mp3; sourceTree = "<group>"; };
+		9C71842F25BD5E33006912EF /* Yay.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Yay.mp3; sourceTree = "<group>"; };
+		9C71843825BD7107006912EF /* Spring.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Spring.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +116,10 @@
 				9C7183D625BD264C006912EF /* AppDelegate.swift */,
 				9C7183D825BD264C006912EF /* SceneDelegate.swift */,
 				9C7183DA25BD264C006912EF /* ViewController.swift */,
+				9C71842925BD5D5D006912EF /* Sounds */,
 				9C7183DC25BD264C006912EF /* Main.storyboard */,
 				9C7183DF25BD264E006912EF /* Assets.xcassets */,
+				9C71841D25BD2A37006912EF /* hackathon code.xcodeproj */,
 				9C7183E125BD264E006912EF /* LaunchScreen.storyboard */,
 				9C7183E425BD264E006912EF /* Info.plist */,
 			);
@@ -126,6 +142,24 @@
 				9C7183FA25BD264E006912EF /* Info.plist */,
 			);
 			path = HackathonUITests;
+			sourceTree = "<group>";
+		};
+		9C71841E25BD2A37006912EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C71842225BD2A37006912EF /* hackathon code */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C71842925BD5D5D006912EF /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				9C71842E25BD5E33006912EF /* Aww.mp3 */,
+				9C71842F25BD5E33006912EF /* Yay.mp3 */,
+				9C71843825BD7107006912EF /* Spring.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +251,12 @@
 			mainGroup = 9C7183CA25BD264C006912EF;
 			productRefGroup = 9C7183D425BD264C006912EF /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9C71841E25BD2A37006912EF /* Products */;
+					ProjectRef = 9C71841D25BD2A37006912EF /* hackathon code.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				9C7183D225BD264C006912EF /* Hackathon */,
@@ -226,14 +266,27 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		9C71842225BD2A37006912EF /* hackathon code */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "hackathon code";
+			remoteRef = 9C71842125BD2A37006912EF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		9C7183D125BD264C006912EF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C71843925BD7107006912EF /* Spring.mp3 in Resources */,
 				9C7183E325BD264E006912EF /* LaunchScreen.storyboard in Resources */,
 				9C7183E025BD264E006912EF /* Assets.xcassets in Resources */,
 				9C7183DE25BD264C006912EF /* Main.storyboard in Resources */,
+				9C71843025BD5E33006912EF /* Aww.mp3 in Resources */,
+				9C71843125BD5E33006912EF /* Yay.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
